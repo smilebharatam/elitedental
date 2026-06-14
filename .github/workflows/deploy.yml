@@ -24,9 +24,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: npm run build
-        env:
-          VITE_BASE_PATH: /elitedental/
+      - run: npm run build:gh-pages
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
