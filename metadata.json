@@ -1,0 +1,6 @@
+{
+  "name": "Elite Dental Clinic",
+  "description": "Premium multi-specialty website for Elite Dental Medavakkam, Chennai - Invisalign provider, Root Canal & Implant Center. Features interactive oral hygiene self-test scans, and direct WhatsApp appointment routing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
