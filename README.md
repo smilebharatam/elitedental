@@ -28,9 +28,21 @@ This site is a static React app. Build it once, then upload the output to any st
 3. Test locally before uploading:
    `npm run preview`
 
-For GitHub Pages at `https://smilebharatam.github.io/elitedental/`, use:
-`npm run build:gh-pages`
+## GitHub Pages / Custom Domain
 
-Then upload the `dist/` folder contents, or push to GitHub and let the Actions workflow deploy automatically.
+The site uses **elitedentalmedavakkam.com** (served from domain root), so build with:
+
+```bash
+npm run build
+```
+
+After pushing to GitHub, the workflow builds and publishes to the `gh-pages` branch.
+
+**One-time GitHub setting (required):**
+1. Repo → **Settings** → **Pages**
+2. **Build and deployment** → Source: **Deploy from a branch**
+3. Branch: **gh-pages** → folder: **/ (root)** → Save
+
+Do **not** deploy from the `main` branch — that serves raw source code and causes a white screen.
 
 **Note:** The optional Express server (`npm start`) is only needed for local Gemini AI chat. Static hosting serves the full clinic website without it.
